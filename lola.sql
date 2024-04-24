@@ -28,11 +28,12 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `update` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table lola.admin: ~0 rows (approximately)
+-- Dumping data for table lola.admin: ~2 rows (approximately)
 REPLACE INTO `admin` (`id`, `nama`, `email`, `password`, `update`) VALUES
-	(1, 'admin', 'admin123@gmail.com', '$2y$10$dWGDvcQK0v73p0UI8VFWseYZhYJuVylf2.6UJ9kN2VXHTi9jOUY1u', '2024-04-22 18:34:03');
+	(1, 'admin', 'admin123@gmail.com', '$2y$10$dWGDvcQK0v73p0UI8VFWseYZhYJuVylf2.6UJ9kN2VXHTi9jOUY1u', '2024-04-22 18:34:03'),
+	(3, 'Sepatu', '123@sad.as', '$2y$10$zxy2biQUwxxPPfaS3Toaw.OcUfUl9djq0Gya3DlM03pLhLKFXCI8.', NULL);
 
 -- Dumping structure for table lola.karyawan
 CREATE TABLE IF NOT EXISTS `karyawan` (
@@ -47,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `karyawan` (
   UNIQUE KEY `nama` (`nama`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table lola.karyawan: ~0 rows (approximately)
+-- Dumping data for table lola.karyawan: ~3 rows (approximately)
 REPLACE INTO `karyawan` (`id`, `nama`, `email`, `no_telp`, `penempatan`, `tgl_masuk`, `update`) VALUES
 	(1, 'Spidermenhaha', 'asda@g.com', '123', 'Lapangan', '2024-04-22', '2024-04-22 17:48:02'),
 	(2, '12', 'asda@ga.o', '12312', 'Kantor', '2024-04-22', NULL),
